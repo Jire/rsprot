@@ -1,7 +1,7 @@
 # RSProt
 
 [![GitHub Actions][actions-badge]][actions] [![MIT license][mit-badge]][mit]
-[![OldSchool - 221 - 234 (Alpha)](https://img.shields.io/badge/OldSchool-221--234_(Alpha)-9a1abd)](https://github.com/blurite/rsprot/tree/master/protocol/osrs-234/osrs-234-api/src/main/kotlin/net/rsprot/protocol/api)
+[![OldSchool - 221 - 235 (Alpha)](https://img.shields.io/badge/OldSchool-221--235_(Alpha)-9a1abd)](https://github.com/blurite/rsprot/tree/master/protocol/osrs-235/osrs-235-api/src/main/kotlin/net/rsprot/protocol/api)
 
 ## Status
 > [!NOTE]
@@ -16,7 +16,7 @@ In order to add it to your server, add the below line under dependencies
 in your build.gradle.kts.
 
 ```kts
-implementation("net.rsprot:osrs-234-api:1.0.0-ALPHA-20251012")
+implementation("net.rsprot:osrs-235-api:1.0.0-ALPHA-20251031")
 ```
 
 An in-depth tutorial on how to implement it will be added into this read-me
@@ -32,12 +32,12 @@ other revisions are welcome, but will not be provided by default.
 - Java 11
 
 ## Supported Versions
-This library currently supports revision 221-234 OldSchool desktop clients.
+This library currently supports revision 221-235 OldSchool desktop clients.
 
 ## Quick Guide
 This section covers a quick guide for how to use the protocol after implementing
 the base API. It is not a guide for the base API itself, that will come in the
-future. This specific quick guide refers to revision 234.
+future. This specific quick guide refers to revision 235.
 
 #### Player Initialization
 When a player logs in, a new protocol instance must be allocated for
@@ -234,6 +234,11 @@ protocol. This can be done via:
 `service.worldEntityAvatarFactory.release(avatar)`
 
 ## Changes
+
+### Revision 235
+Revision 235 brings no protocol level changes.
+However, as a small side note, OBJ packets are no longer limited to id 32767
+in client.
 
 ### Revision 234
 
